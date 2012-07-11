@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.build.screendim"
+    version="1.0.1">
+
+    <name>Screen Dim</name>
+
+    <asset src="www/screendim.js" target="screendim.js" />
+
+    <!-- ios -->
+    <platform name="ios">
+        <plugins-plist key="ScreenDim"
+                    string="ScreenDimPlugin" />
+
+        <header-file src="ScreenDimPlugin.h" />
+
+        <source-file src="ScreenDimPlugin.m" />
+    </platform>
+</plugin>
