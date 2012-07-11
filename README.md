@@ -8,10 +8,12 @@
 <script src="cordova.js"></script>
 <script src="screendim.js"></script>
 <script>
+    // turn off the default screen dimming
     document.getElementById('turnoff').addEventListener('touchstart', function (e) {
         cordova.screenDim.disable();
     });
 
+    // turn it back on
     document.getElementById('turnon').addEventListener('touchstart', function (e) {
         cordova.screenDim.enable();
     });
@@ -43,6 +45,7 @@ part of your app, and enable it again once you're done.
 ## Supported Platforms
 
 * iOS
+* Android
 
 ## LICENSE
 

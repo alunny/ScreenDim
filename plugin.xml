@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.phonegap.build.screendim"
-    version="1.0.1">
+    version="0.1.0">
 
     <name>Screen Dim</name>
 
@@ -17,5 +17,16 @@
         <header-file src="ScreenDimPlugin.h" />
 
         <source-file src="ScreenDimPlugin.m" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <source-file src="src/android/ScreenDim.java"
+                target-dir="src/com/phonegap/build/screendim" />
+
+        <config-file target="res/xml/plugins.xml" parent="/plugins">
+            <plugin name="ScreenDim"
+                    value="com.phonegap.build.screendim.ScreenDim" />
+        </config-file>
     </platform>
 </plugin>
