@@ -18,6 +18,7 @@
         cordova.screenDim.enable();
     });
 
+    // toggle it
     document.getElementById('toggle').addEventListener('touchstart', function (e) {
         cordova.screenDim.toggle();
     });
